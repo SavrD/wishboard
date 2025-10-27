@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный дашборд</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <header>
+        <div class="header-top">
+          <h1>Список задач</h1>
+          <button id="themeToggle" class="theme-toggle">Смена темы</button>
+        </div>
+        <p id="datetime"></p>
+      </header>
+
+      <main>
+        <section class="todo">
+          <h2>Список дел</h2>
+          <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Введите задачу..." />
+            <button id="addTask">Добавить</button>
+          </div>
+          <ul id="taskList"></ul>
+          <p class="stats" id="stats"></p>
+        </section>
+
+        <section class="weather">
+          <h2>Погода</h2>
+          <div class="weather-info">
+            <div class="weather-details">
+              <p class="temp">+18°C</p>
+              <p class="desc">Ясно, легкий ветер</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
